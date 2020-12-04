@@ -1,6 +1,6 @@
 from rest_framework.serializers import ModelSerializer
 
-from relationship.match.models import Match
+from match.models import Match
 
 
 class MatchSerializer(ModelSerializer):

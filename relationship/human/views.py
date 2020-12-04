@@ -1,7 +1,7 @@
 from rest_framework.viewsets import ModelViewSet
 
-from relationship.human.models import Human
-from relationship.human.serializers import HumanSerializer
+from human.models import Human
+from human.serializers import HumanSerializer
 
 
 class HumanViewSet(ModelViewSet):

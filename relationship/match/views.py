@@ -1,7 +1,7 @@
 from rest_framework.viewsets import ModelViewSet
 
-from relationship.match.models import Match
-from relationship.match.serializers import MatchSerializer
+from match.models import Match
+from match.serializers import MatchSerializer
 
 
 class MatchViewSet(ModelViewSet):

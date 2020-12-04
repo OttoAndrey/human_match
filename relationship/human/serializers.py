@@ -1,6 +1,6 @@
 from rest_framework.serializers import ModelSerializer
 
-from relationship.human.models import Human
+from human.models import Human
 
 
 class HumanSerializer(ModelSerializer):

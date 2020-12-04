@@ -1,6 +1,6 @@
 from django.db import models
 
-from relationship.human.models import Human
+from human.models import Human
 
 
 class Match(models.Model):

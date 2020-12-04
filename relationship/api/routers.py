@@ -1,8 +1,8 @@
 from rest_framework import routers
 
-from relationship.human.views import HumanViewSet
-from relationship.match.views import MatchViewSet
+from human.views import HumanViewSet
+from match.views import MatchViewSet
 
 router = routers.DefaultRouter()
 router.register('human', HumanViewSet, basename='human')
-router.register('users', MatchViewSet, basename='match')
+router.register('match', MatchViewSet, basename='match')
