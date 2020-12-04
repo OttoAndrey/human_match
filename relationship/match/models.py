@@ -4,9 +4,9 @@ from human.models import Human
 
 
 class Match(models.Model):
-    FEMALE = '0'
-    MALE = '1'
-    OTHER = '2'
+    FEMALE = 'F'
+    MALE = 'M'
+    OTHER = 'O'
     GENDERS = [
         (FEMALE, 'Female'),
         (MALE, 'Male'),
