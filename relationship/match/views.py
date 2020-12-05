@@ -1,9 +1,8 @@
-from rest_framework.viewsets import ModelViewSet
-
 from match.models import Match
 from match.serializers import MatchSerializer
+from rest_framework.viewsets import ReadOnlyModelViewSet
 
 
-class MatchViewSet(ModelViewSet):
+class MatchViewSet(ReadOnlyModelViewSet):
     serializer_class = MatchSerializer
     queryset = Match.objects.all()
