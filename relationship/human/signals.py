@@ -8,7 +8,6 @@ from match.models import Match
 
 @receiver(post_save, sender=Human)
 def create_match(sender, instance, **kwargs):
-    print('im in')
     fake = Faker('ru_RU')
     name = fake.name()
     name_parts = name.split(' ')
@@ -18,14 +17,11 @@ def create_match(sender, instance, **kwargs):
     genders = ['F', 'M', 'O']
     gender = fake.random.choice(genders)
 
-    print('now here')
-
-    match = Match.objects.create(
-        first_name=first_name,
-        second_name=second_name,
-        age=age,
-        gender=gender,
+    Match.objects.get_or_create(
         human=instance,
+        defaults={'first_name': first_name,
+                  'second_name': second_name,
+                  'age': age,
+                  'gender': gender,
+                  }
     )
-    print('here')
-    match.save()
