@@ -1,6 +1,5 @@
-from rest_framework.serializers import ModelSerializer
-
 from human.models import Human
+from rest_framework.serializers import ModelSerializer
 
 
 class HumanSerializer(ModelSerializer):
