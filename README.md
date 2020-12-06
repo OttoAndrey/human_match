@@ -10,11 +10,11 @@
 Первое приложение:
 
 Дана модель Human:
- - avatar
- - first_name
- - second_name
- - age
- - gender
+ - avatar;
+ - first_name;
+ - second_name;
+ - age;
+ - gender.
 
 Для этого приложения необходимо реализовать следующие запросы:
  - POST /api/human/ - Создание и сохранение модели
@@ -26,10 +26,10 @@
 Второе приложение:
 
 Дана модель Match:
- - first_name
- - second_name
- - age
- - gender
+ - first_name;
+ - second_name;
+ - age;
+ - gender.
 
 Необходимо после создания Human в первом приложении создать ему пару Match во втором.
 Для заполнения данных можно использовать любые данные(напр. библиотеку Faker).
